@@ -1,0 +1,8 @@
+Pepsi Landing Page Website
+
+Program Language : HTML5, CSS3 Flexbox, Javascript DOM
+Code Editor	 : Visual Studio 2020
+Font Face	 : Arial & Sans-Serif
+Image Source	 : https://www.pepsi.com
+Music By	 : Pepsi-Man (psx)
+Category	 : Front-End

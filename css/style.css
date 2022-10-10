@@ -1,0 +1,293 @@
+/*CSS TO ALL*/
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BACKGROUND LAYER*/
+section {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0062be;
+    transition: 0.5s;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*ALL CODE IN HEADER TAG*/
+header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+
+    position: relative;
+    max-width: 80px;
+}
+
+header .logo:hover {
+
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+    transition: 1s;
+}
+
+header ul {
+
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+
+    list-style: none;
+}
+
+header ul li a {
+
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+
+    background-color: red;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/* MAIN CONTENT*/
+.content {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px red;
+}
+
+.content .textBox h2 span {
+
+    font-size: 2em;
+}
+
+.content .textBox p {
+
+    color: #ffffff;
+    font-weight: bolder;
+    line-height: 23px;
+    text-align: justify;
+}
+
+.content .textBox a {
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ffffff;
+    color: #111;
+    font-weight: bold;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid red;
+}
+
+
+.content .textBox a:hover {
+
+    background: red;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+
+p span {
+
+    background-color: rgb(99, 96, 96);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.content .imgBox {
+
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .imgBox img {
+
+    max-width: 260px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*THUMB IMAGES*/
+.thumb {
+
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+
+    transform: translateY(-15%);
+}
+
+.thumb li img {
+
+    max-width: 40px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*SOCIAL MEDIA ICONS*/
+.sci {
+
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+
+    list-style: none;
+}
+
+.sci li a {
+
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*RESPONSIVE BREAKPOINT*/
+@media(max-width: 1024px) {
+
+    section {
+
+        padding: 40px;
+    }
+
+    header {
+
+        padding: 20px 40px;
+    }
+
+    header .logo {
+
+        position: relative;
+        max-width: 60px;
+    }
+
+    header ul {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+    header ul li a {
+
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    header ul li a:hover {
+
+        color: white;
+    }
+
+    .toggleMenu {
+
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;   
+    }
+
+}
